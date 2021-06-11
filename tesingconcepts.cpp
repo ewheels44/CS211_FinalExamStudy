@@ -65,8 +65,15 @@ void myfunc2( int A, int *B, int C[], int &D)
 	D = 42;
 }
 
-//A function that takes a douuble as an arugment and returns an int
+// A function that takes a douuble as an arugment and returns an int
 
+// A function that takes a pointer to an int as an argument, and returns a char:
+
+// A function that takes a float as an argument and returns a pointer to a double:
+
+// A function that takes two doubles as arguments, and does not return anything:
+
+// A function that takes pointer to a Point3d as an argument, and returns a generic pointer:
 
 int main(int argc, const char** argv) {
 
