@@ -22,6 +22,34 @@ class  Myclass{
 		void dosomething(int x);
 };
 
+//
+// writitng a small class with Singleton design pattern
+//
+class Singleton{
+    private:
+        static Singleton * theInstance;
+        Singleton();
+    public:
+        static Singleton * getSingleton(void);
+
+};
+
+Singleton::Singleton(){
+
+}
+
+// not sure if this is neccessary but its always good to initilize
+//
+Singleton * theInstance = NULL;             
+Singleton * Singleton::getSingleton() {
+    
+    if(!theInstance)
+        theInstance = new Singleton();
+
+return theInstance;
+}
+
+
 // original (no edits)
 /* void myfunc( int A, int * B, int C[ ], int * D ) { */
 /*  */
